@@ -317,6 +317,13 @@ select::-ms-expand {
 	}
 }
 
+#opportunity, #spirit {
+    background-color: blue; /* Add a blue background color to both buttons */
+    color: white; /* Add white text color to both buttons */
+    padding: 10px 20px; /* Add padding to both buttons */
+    border-radius: 5px; /* Add rounded corners to both buttons */
+}
+
 
 @media only screen and (max-width: 320px){
 	body{
