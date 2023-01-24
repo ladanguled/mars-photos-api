@@ -307,6 +307,95 @@ select::-ms-expand {
 		padding: 25px 0px 25px 20px;
 	}
 }
+
+@media only screen and (max-width: 425px){
+	body{
+		margin: 15vh 50px 15vh;
+	}
+	.menu-section h1{
+		font-size: 35px;
+	}
+	.intro-text{
+		margin: 30px 20px;
+		font-size: 18px;
+	}
+	.filter-section{
+		margin-top: 50px;
+	}
+	#opportunity{
+		margin-left: 25px;
+		margin-top: 15px;
+		padding: 25px 85px !important;
+	}
+	input[type="date"]{
+		width: auto;
+		padding: 22.5px 40px;
+	}
+	.pov-selection select{
+		width: 250px;
+	}
+}
+@media only screen and (max-width: 375px){
+	.rover-selection p{
+		padding: 25px 40px;
+	}
+	#opportunity{
+		padding: 25px 65px !important;
+	}
+	input[type="date"]{
+		padding: 22.5px 20px;
+	}
+	.pov-selection select{
+		width: 220px;
+		font-size: 18px;
+		padding: 25px 0px 25px 20px;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	body{
+		margin: 15vh 50px 15vh;
+	}
+	.menu-section h1{
+		font-size: 35px;
+	}
+	.intro-text{
+		margin: 30px 20px;
+		font-size: 18px;
+	}
+	.filter-section{
+		margin-top: 50px;
+	}
+	#spirit{
+		margin-left: 25px;
+		margin-top: 15px;
+		padding: 25px 85px !important;
+	}
+	input[type="date"]{
+		width: auto;
+		padding: 22.5px 40px;
+	}
+	.pov-selection select{
+		width: 250px;
+	}
+}
+@media only screen and (max-width: 375px){
+	.rover-selection p{
+		padding: 25px 40px;
+	}
+	#spirit{
+		padding: 25px 65px !important;
+	}
+	input[type="date"]{
+		padding: 22.5px 20px;
+	}
+	.pov-selection select{
+		width: 220px;
+		font-size: 18px;
+		padding: 25px 0px 25px 20px;
+	}
+}
+
 @media only screen and (max-width: 320px){
 	body{
 		margin: 15vh 20px;
