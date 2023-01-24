@@ -3,6 +3,7 @@
 // Change active class of rovers buttons and
 // change selection dropdown menu options
 
+//Written by Ladan -->
     const perseverance = document.getElementById("perseverance");
     const curiosity = document.getElementById("curiosity");
     const opportunity = document.getElementById("opportunity");
@@ -56,6 +57,7 @@
         povSeletorSpirit.style.display = "inline-block";
     },false);
 
+    //Written by Ladan End
     var today = new Date().toISOString().split('T')[0];
     document.getElementsByName("date")[0].setAttribute('max', today);
 
@@ -102,8 +104,8 @@
             let dateForm = data.get("date");
             let roverPovPerseverance = data.get("pov-select-perseverance");
             let roverPovCuriosity = data.get("pov-select-curiosity");
-            let roverPovOpportunity = data.get("pov-select-opportunity");
-            let roverPovSpirit = data.get("pov-select-spirit");
+            let roverPovOpportunity = data.get("pov-select-opportunity"); //Written by Ladan
+            let roverPovSpirit = data.get("pov-select-spirit"); //Written by Ladan
             
             //const apiKey = "br0NPsC8vL4nnZbUjp9djgc8M4hEo9qlUNUN3puR";
 
@@ -112,6 +114,7 @@
 
             var povSelected;
 
+            //Written by Ladan
             if(roverType == "perseverance"){
                 povSelected = roverPovPerseverance;
             }else if(roverType == "curiosity"){
