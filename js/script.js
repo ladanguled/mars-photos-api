@@ -41,8 +41,8 @@
         spirit.classList.remove("active");
         povSeletorPerseverance.style.display = "none";
         povSeletorCuriosity.style.display = "none";
-        povSeletorOpportunity.style.display = "inline-block";
-        povSeletorSpirit.style.display = "none";
+        povSeletorOpportunity.style.display = "none";
+        povSeletorSpirit.style.display = "inline-block";
     },false);
 
     spirit.addEventListener("change", () => {
@@ -104,6 +104,7 @@
             let roverPovCuriosity = data.get("pov-select-curiosity");
             let roverPovOpportunity = data.get("pov-select-opportunity");
             let roverPovSpirit = data.get("pov-select-spirit");
+            
             //const apiKey = "br0NPsC8vL4nnZbUjp9djgc8M4hEo9qlUNUN3puR";
 
             const apiKey = "88q9PD90e4f4WH5XczdWILaIymAkWBZ9OkVxvu9a"
@@ -117,7 +118,7 @@
                 povSelected = roverPovCuriosity;
             }else if(roverType == "opportunity"){
                 povSelected = roverPovOpportunity;
-            }else{
+            }else if(roverType == "spirit"){
                 povSelected = roverPovSpirit;
             }
 
