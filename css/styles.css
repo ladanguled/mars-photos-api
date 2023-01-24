@@ -316,40 +316,93 @@ select::-ms-expand {
 		padding: 25px 0px 25px 20px;
 	}
 }
-#opportunity, #spirit {
-    /* Default styles for both buttons */
-    background-color: #9a00ff;
-    color: white;
-    padding: 20px 40px;
-    border-radius: 20px;
-    font-size: 20px;
-    cursor: pointer;
+
+@media only screen and (max-width: 425px){
+	body{
+		margin: 15vh 50px 15vh;
+	}
+	.menu-section h1{
+		font-size: 35px;
+	}
+	.intro-text{
+		margin: 30px 20px;
+		font-size: 18px;
+	}
+	.filter-section{
+		margin-top: 50px;
+	}
+	#opportunity{
+		margin-left: 25px;
+		margin-top: 15px;
+		padding: 25px 85px !important;
+	}
+	input[type="date"]{
+		width: auto;
+		padding: 22.5px 40px;
+	}
+	.pov-selection select{
+		width: 250px;
+	}
+}
+@media only screen and (max-width: 375px){
+	.rover-selection p{
+		padding: 25px 40px;
+	}
+	#opportunity{
+		padding: 25px 65px !important;
+	}
+	input[type="date"]{
+		padding: 22.5px 20px;
+	}
+	.pov-selection select{
+		width: 220px;
+		font-size: 18px;
+		padding: 25px 0px 25px 20px;
+	}
 }
 
-#opportunity:hover, #spirit:hover {
-    background-color: #171b31;
+@media only screen and (max-width: 425px){
+	body{
+		margin: 15vh 50px 15vh;
+	}
+	.menu-section h1{
+		font-size: 35px;
+	}
+	.intro-text{
+		margin: 30px 20px;
+		font-size: 18px;
+	}
+	.filter-section{
+		margin-top: 50px;
+	}
+	#spirit{
+		margin-left: 25px;
+		margin-top: 15px;
+		padding: 25px 85px !important;
+	}
+	input[type="date"]{
+		width: auto;
+		padding: 22.5px 40px;
+	}
+	.pov-selection select{
+		width: 250px;
+	}
 }
-
-@media (max-width: 600px) {
-    /* Styles for screens with a width of 600px or less */
-    #opportunity, #spirit {
-        font-size: 16px; /* Reduce font size */
-        padding: 10px 20px; /* Reduce padding */
-    }
-}
-
-@media (min-width: 600px) and (max-width: 800px) {
-    /* Styles for screens with a width between 600px and 800px */
-    #opportunity, #spirit {
-        font-size: 18px; /* Increase font size */
-    }
-}
-
-@media (min-width: 800px) {
-    /* Styles for screens with a width of 800px or more */
-    #opportunity, #spirit {
-        padding: 30px 60px; /* Increase padding */
-    }
+@media only screen and (max-width: 375px){
+	.rover-selection p{
+		padding: 25px 40px;
+	}
+	#spirit{
+		padding: 25px 65px !important;
+	}
+	input[type="date"]{
+		padding: 22.5px 20px;
+	}
+	.pov-selection select{
+		width: 220px;
+		font-size: 18px;
+		padding: 25px 0px 25px 20px;
+	}
 }
 
 @media only screen and (max-width: 320px){
