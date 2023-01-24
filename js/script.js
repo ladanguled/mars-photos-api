@@ -15,6 +15,8 @@
     perseverance.addEventListener("change", () => {
         perseverance.classList.add("active");
         curiosity.classList.remove("active");
+        opportunity.classList.remove("active");
+        spirit.classList.remove("active");
         povSeletorPerseverance.style.display = "inline-block";
         povSeletorCuriosity.style.display = "none";
         povSeletorOpportunity.style.display = "none";
@@ -24,6 +26,8 @@
     curiosity.addEventListener("change", () => {
         curiosity.classList.add("active");
         perseverance.classList.remove("active");
+        opportunity.classList.remove("active");
+        spirit.classList.remove("active");
         povSeletorPerseverance.style.display = "none";
         povSeletorCuriosity.style.display = "inline-block";
         povSeletorOpportunity.style.display = "none";
@@ -33,6 +37,8 @@
     opportunity.addEventListener("change", () => {
         opportunity.classList.add("active");
         perseverance.classList.remove("active");
+        curiosity.classList.remove("active");
+        spirit.classList.remove("active");
         povSeletorPerseverance.style.display = "none";
         povSeletorCuriosity.style.display = "none";
         povSeletorOpportunity.style.display = "inline-block";
@@ -42,6 +48,8 @@
     spirit.addEventListener("change", () => {
         spirit.classList.add("active");
         perseverance.classList.remove("active");
+        curiosity.classList.remove("active");
+        opportunity.classList.remove("active");
         povSeletorPerseverance.style.display = "none";
         povSeletorCuriosity.style.display = "none";
         povSeletorOpportunity.style.display = "none";
