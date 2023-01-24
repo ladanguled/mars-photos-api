@@ -31,7 +31,7 @@
     },false);
 
     opportunity.addEventListener("change", () => {
-        curiosity.classList.add("active");
+        opportunity.classList.add("active");
         perseverance.classList.remove("active");
         povSeletorPerseverance.style.display = "none";
         povSeletorCuriosity.style.display = "none";
@@ -40,7 +40,7 @@
     },false);
 
     spirit.addEventListener("change", () => {
-        curiosity.classList.add("active");
+        spirit.classList.add("active");
         perseverance.classList.remove("active");
         povSeletorPerseverance.style.display = "none";
         povSeletorCuriosity.style.display = "none";

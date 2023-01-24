@@ -316,18 +316,40 @@ select::-ms-expand {
 		padding: 25px 0px 25px 20px;
 	}
 }
-
 #opportunity, #spirit {
-    background-color: #9a00ff; /* Add a purple background color to both buttons */
-    color: white; /* Add white text color to both buttons */
-    padding: 20px 40px; /* Add padding to both buttons */
-    border-radius: 20px; /* Add rounded corners to both buttons */
-    font-size: 20px; /* Add font size to both buttons */
-    cursor: pointer; /* Add cursor style to both buttons */
+    /* Default styles for both buttons */
+    background-color: #9a00ff;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 #opportunity:hover, #spirit:hover {
-    background-color: #171b31; /* Change background color on hover */
+    background-color: #171b31;
+}
+
+@media (max-width: 600px) {
+    /* Styles for screens with a width of 600px or less */
+    #opportunity, #spirit {
+        font-size: 16px; /* Reduce font size */
+        padding: 10px 20px; /* Reduce padding */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+    /* Styles for screens with a width between 600px and 800px */
+    #opportunity, #spirit {
+        font-size: 18px; /* Increase font size */
+    }
+}
+
+@media (min-width: 800px) {
+    /* Styles for screens with a width of 800px or more */
+    #opportunity, #spirit {
+        padding: 30px 60px; /* Increase padding */
+    }
 }
 
 @media only screen and (max-width: 320px){
