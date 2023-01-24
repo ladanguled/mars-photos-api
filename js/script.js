@@ -5,14 +5,20 @@
 
     const perseverance = document.getElementById("perseverance");
     const curiosity = document.getElementById("curiosity");
+    const opportunity = document.getElementById("opportunity");
+    const spirit = document.getElementById("spirit");
     const povSeletorPerseverance = document.getElementById("pov-select-perseverance");
     const povSeletorCuriosity = document.getElementById("pov-select-curiosity");
+    const povSeletorOpportunity = document.getElementById("pov-select-opportunity");
+    const povSeletorSpirit = document.getElementById("pov-select-spirit");
 
     perseverance.addEventListener("change", () => {
         perseverance.classList.add("active");
         curiosity.classList.remove("active");
         povSeletorPerseverance.style.display = "inline-block";
         povSeletorCuriosity.style.display = "none";
+        povSeletorOpportunity.style.display = "none";
+        povSeletorSpirit.style.display = "none";
     },false);
 
     curiosity.addEventListener("change", () => {
@@ -20,6 +26,26 @@
         perseverance.classList.remove("active");
         povSeletorPerseverance.style.display = "none";
         povSeletorCuriosity.style.display = "inline-block";
+        povSeletorOpportunity.style.display = "none";
+        povSeletorSpirit.style.display = "none";
+    },false);
+
+    opportunity.addEventListener("change", () => {
+        curiosity.classList.add("active");
+        perseverance.classList.remove("active");
+        povSeletorPerseverance.style.display = "none";
+        povSeletorCuriosity.style.display = "none";
+        povSeletorOpportunity.style.display = "inline-block";
+        povSeletorSpirit.style.display = "none";
+    },false);
+
+    spirit.addEventListener("change", () => {
+        curiosity.classList.add("active");
+        perseverance.classList.remove("active");
+        povSeletorPerseverance.style.display = "none";
+        povSeletorCuriosity.style.display = "none";
+        povSeletorOpportunity.style.display = "none";
+        povSeletorSpirit.style.display = "inline-block";
     },false);
 
     var today = new Date().toISOString().split('T')[0];
@@ -68,16 +94,23 @@
             let dateForm = data.get("date");
             let roverPovPerseverance = data.get("pov-select-perseverance");
             let roverPovCuriosity = data.get("pov-select-curiosity");
-            const apiKey = "br0NPsC8vL4nnZbUjp9djgc8M4hEo9qlUNUN3puR";
+            let roverPovOpportunity = data.get("pov-select-opportunity");
+            let roverPovSpirit = data.get("pov-select-spirit");
+            //const apiKey = "br0NPsC8vL4nnZbUjp9djgc8M4hEo9qlUNUN3puR";
 
+            const apiKey = "88q9PD90e4f4WH5XczdWILaIymAkWBZ9OkVxvu9a"
             // Check which rover the user selected
 
             var povSelected;
 
             if(roverType == "perseverance"){
                 povSelected = roverPovPerseverance;
-            }else{
+            }else if(roverType == "curiosity"){
                 povSelected = roverPovCuriosity;
+            }else if(roverType == "opportunity"){
+                povSelected = roverPovOpportunity;
+            }else{
+                povSelected = roverPovSpirit;
             }
 
             // If the user did not select a POV, the API will fetch all results
